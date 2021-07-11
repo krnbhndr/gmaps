@@ -23,3 +23,7 @@ Copy the output from CLI and test on -> https://www.mapcustomizer.com/#
 
 For screenshots please refer:
 https://docs.google.com/document/d/1pv1VLS_XVWqOB2EjZ1ST4fYRLZHB0r2bDlK7Nsz5Ma8/edit?usp=sharing
+
+
+For key concepts :
+https://codewithkaran.medium.com/google-maps-for-beginners-2ddb6c453b40
