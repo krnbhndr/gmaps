@@ -14,7 +14,7 @@ def get_bearing(lat1, lat2, long1, long2):  # for getting bearing
 # input data
 origin = "12.927923,77.627106"
 destination = "12.990230,77.714340"
-distance = 0.5  # for calculating points
+distance = 2.0  # for calculating points
 
 
 api_key = "AIzaSyAEQvKUVouPDENLkQlCF6AAap1Ze-6zMos"  # key
@@ -48,7 +48,7 @@ temp_dis = 0.0
 prev_dis = 0.0
 step_calibrated = []
 
-
+step_calibrated.append(prev_step)
 for pos in polylines:
     for p in pos:
         prev_dis = temp_dis
@@ -67,5 +67,7 @@ for pos in polylines:
             step_calibrated.append(prev_step)
             prev_step= p
 
+if(step_calibrated[-1]!=prev_step):
+    step_calibrated.append(prev_step)
 for j in step_calibrated:
     print(j[0], j[1])
